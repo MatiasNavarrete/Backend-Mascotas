@@ -11,7 +11,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.data.jpa.mapping.JpaMetamodelMappingContext;
-import org.springframework.test.context.bean.override.mockito.MockitoBean; // 🚨 El nuevo import mágico
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 
@@ -31,7 +31,7 @@ class MascotaControllerTest {
     @Autowired
     private MockMvc mockMvc;
 
-    @MockitoBean // 🚨 La nueva anotación para Spring Boot 3.4+
+    @MockitoBean
     private MascotaService mascotaService;
 
     @MockitoBean
